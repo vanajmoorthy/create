@@ -1,6 +1,6 @@
 {
   "name": "@vanajmoorthy/create",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A touch equivalent in node",
   "main": "index.js",
   "scripts": {
