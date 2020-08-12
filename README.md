@@ -7,4 +7,4 @@ Why does this exist? Well because I had fun making it and also there really isn'
 ### Usage
 
 -   Option 1 (for people with npm): `npm i -g @vanajmoorthy/create`
--   Option 2 (for general users): Download the release from releases and install it.
+-   Option 2 (for general users): Download the release from [releases](https://github.com/vanajmoorthy/create/releases) and install it.
