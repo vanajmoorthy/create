@@ -4,7 +4,7 @@
   "description": "A touch equivalent in node",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "node index.js"
   },
   "keywords": [
     "touch",
