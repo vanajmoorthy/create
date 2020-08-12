@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+const chalk = require("chalk");
+const shell = require("shelljs");
+const argv = require("minimist")(process.argv.slice(2));
+const path = require("path");
+const fs = require("fs");
+const mkdirp = require("mkdirp");
+
+const createFile = (filepath) => {
+	const dir = path.dirname(filepath);
+	if (!fs.existsSync(dir)) {
+		const pathToFile = path.join(__dirname, dir);
+		mkdirp.sync(pathToFile);
+	}
+	const filePath = `${process.cwd()}/${filepath}`;
+	shell.touch(filePath);
+	return filePath;
+};
+
+const success = (filepath) => {
+	console.log(
+		chalk.white.bgBlue.bold(`Completed! File/folder created at ${filepath}`)
+	);
+};
+
+const run = () => {
+	console.log(createFile(argv._[0]));
+	success(argv._[0]);
+};
+
+run();
