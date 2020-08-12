@@ -1,5 +1,5 @@
 {
-  "name": "create",
+  "name": "@vanajmoorthy/create",
   "version": "1.0.0",
   "description": "A touch equivalent in node",
   "main": "index.js",
@@ -21,7 +21,10 @@
     "mkdirp": "^1.0.4",
     "shelljs": "^0.8.4"
   },
-  "homepage": "https://github.com/vanajmoorthy/create#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanajmoorthy/create"
+  },
   "bin": {
     "create": "./index.js"
   }
