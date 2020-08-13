@@ -5,13 +5,13 @@ const shell = require("shelljs");
 const argv = require("minimist")(process.argv.slice(2));
 const path = require("path");
 const fs = require("fs");
-const mkdirp = require("mkdirp");
+const fsExtra = require("fs-extra");
 
 const createFile = (filepath) => {
 	const dir = path.dirname(filepath);
 	if (!fs.existsSync(dir)) {
 		const pathToFile = path.join(__dirname, dir);
-		mkdirp.sync(pathToFile);
+		fsExtra.ensureDirSync(pathToFile);
 	}
 	const filePath = `${process.cwd()}/${filepath}`;
 	shell.touch(filePath);

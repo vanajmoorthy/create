@@ -4,7 +4,7 @@
   "description": "A touch equivalent in node",
   "main": "index.js",
   "scripts": {
-    "run": "node index.js"
+    "start": "node index.js"
   },
   "keywords": [
     "touch",
@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
+    "fs-extra": "^9.0.1",
     "inquirer": "^7.3.3",
     "install": "^0.13.0",
     "meow": "^7.1.0",
