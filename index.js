@@ -9,6 +9,7 @@ const fsExtra = require("fs-extra");
 
 const createFile = (filepath) => {
 	const dir = path.dirname(filepath);
+	console.log("gg");
 	if (!fs.existsSync(dir)) {
 		const pathToFile = path.join(__dirname, dir);
 		fsExtra.ensureDirSync(pathToFile);
