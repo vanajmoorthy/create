@@ -12,7 +12,7 @@ const createFile = (filepath) => {
 	console.log("gg");
 	if (!fs.existsSync(dir)) {
 		const pathToFile = path.join(__dirname, dir);
-		fsExtra.ensureDirSync(pathToFile);
+		fs.mkdirSync(pathToFile, { recursive: true });
 	}
 	const filePath = `${process.cwd()}/${filepath}`;
 	shell.touch(filePath);
